@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-infobot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    
+
+   
+   
+
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        .follower {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ff4081;
+            pointer-events: none;
+            transition: transform 0.1s ease;
+
+        
+        }
+
+        html, body{
+            height: 100%; /* Garante que o conteúdo ocupe toda a altura */
+    overflow: auto; /* Ativa o scroll automaticamente quando necessário */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+        }
+    </style>
+
+    <style>
+        .full_list:hover{
+  box-shadow: 0 0 30px 10px #c2c1c4;
+  transform: translate(-10px);
+}
+    </style>
+
+
+
+
+
+</head>
+
+
+
+<body id="particles-js">
+    <header>   
+        <div class="title">
+            <h1>DEV- infobot</h1>
+            <hr id="hr1">
+        </div>
+    </header>
+    
+    <main>
+        <section class="container">
+            <article class="card">
+                
+                    <h2>DEV-BOT</h2>
+                
+                <div class="hr">
+                    <hr><br><br>
+                </div>
+                <p>I'm creating a dev bot to help with your programming work</p>
+            </article>
+        </section>
+    </main>
+    
+    <aside class="colorpick">
+        <!-- Conteúdo adicional -->
+    </aside>
+
+
+
+    <div class="caracteristicas">
+        <h3 class="h3forr">Porque Devo Usar</h3>
+        <div class="conteudo">
+            <div class="gif-container">
+              <img src="gif/220253.gif" alt="Gif ilustrativo">
+            </div>
+        <div class="ulcaracter">
+            <ul>
+                <li class="full_list">🚀 Aumento da Produtividade</li>
+                <li class="full_list">⚡ Melhoria de Performance</li>
+                <li class="full_list">✅ Redução de Erros</li>
+                <li class="full_list">🎯 Melhoria na Semântica do Projeto</li>
+        
+            </ul>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+    <footer>
+        <p>&copy - by rbdev</p>
+    </footer>
+
+
+    <script>
+        const follower = document.getElementById('follower');
+
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            follower.style.left = `${mouseX - 15}px`;  // Ajusta para centralizar o círculo
+            follower.style.top = `${mouseY - 15}px`;
+        });
+    </script>
+
+
+
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="settings.js"></script>
+    <script src="particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+
+
+
+</body>
+</html>
